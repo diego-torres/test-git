@@ -6,12 +6,23 @@ package com.myspace.test_git;
 
 public class Transaction implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Transaction() {
-    }
+	private java.lang.String cfid;
 
+	public Transaction() {
+	}
 
+	public java.lang.String getCfid() {
+		return this.cfid;
+	}
 
+	public void setCfid(java.lang.String cfid) {
+		this.cfid = cfid;
+	}
+
+	public Transaction(java.lang.String cfid) {
+		this.cfid = cfid;
+	}
 
 }
